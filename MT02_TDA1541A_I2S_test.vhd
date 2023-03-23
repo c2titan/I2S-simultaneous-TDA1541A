@@ -10,10 +10,10 @@
 
 -- Only 3 signal wires (I2S) are needed for input (DATA, BCK, LRCK).
 -- Output is offset-binary specified for TDA1541A: 
---  BCK - stopped DAC clock
---  DL  - Left DAC data (inversed MSB)
---  DR  - Right DAC data (inversed MSB)
---  LE  - Latch for both channels (latched together)
+--  CL (outBCK) - stopped DAC clock
+--  DL (outDL)  - Left DAC data (inversed MSB)
+--  DR (outDR)  - Right DAC data (inversed MSB)
+--  LE (outLE)  - Latch for both channels (latched together)
 
 -- It flawlessly works with the cheap CPLD EPM240T100C5 from aliexpress.
 
