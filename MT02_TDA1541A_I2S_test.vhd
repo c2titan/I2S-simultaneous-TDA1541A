@@ -149,8 +149,8 @@ begin
 			outLE <= leFlag;	-- Latch pulse on rising BCK
 		end if;
 		
-		if (cntOB >= 3) AND (cntOB < 19) AND (inLRCK = '1') then
-			outBCK <= inBCK;	-- stopped clock for both channels
+		if (cntOB >= 2) AND (cntOB < 18) AND (inLRCK = '1') then
+			outBCK <= NOT inBCK;	-- stopped clock for both channels
 		else
 			outBCK <= '0';
 		end if;
