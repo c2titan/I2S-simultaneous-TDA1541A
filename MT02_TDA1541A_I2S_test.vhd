@@ -134,9 +134,9 @@ begin
 				dataFlagL <= '0';
 			end if;
 			
-			if (cntOB = 23) AND (inLRCK = '1') then	-- LE pulse duration (2 BCK)
+			if (cntOB = 17) AND (inLRCK = '0') then	-- LE pulse duration (4 BCK)
 				leFlag <= '1';
-			elsif (cntOB >= 25) then
+			elsif (cntOB >= 21) then
 				leFlag <= '0';
 			end if;
 			
